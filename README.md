@@ -2,11 +2,9 @@
 
 ### Introduction
 
-This package performs linear interpolation of multivariate functions of arbitrary dimension.
+This package performs linear interpolation of multivariate functions of arbitrary dimension by recursively applying bilinear interpolation.
 
-This is done by recursively applying bilinear interpolation.
-
-Linear extrapolation is performed for evaluation points out of the grid.
+This package recursively applies bilinear interpolation to perform multivariate interpolation. A rectangular grid is required. Linear extrapolation is performed outside of the grid.
 
 ### Installation
 
@@ -35,19 +33,15 @@ library(mvInterp)
 
 ### Usage
 
-A rectangular grid is required for interpolation.
-
-A grid is represented by a matrix whose rows represent evaluation points.
-
-The corresponding function values are stored in another vector.
-
 The following example interpolates a function `f(x1, x2, x3) = x1 - x2 + x3^2`.
 
 ```r
 require(mvInterp)
 
-# create f(x1, x2, x3) over the grid [1,2,3]^3.
+# create a rectangular grid [1,2,3]^3.
 xGrid = as.matrix(expand.grid(rep(list(c(1,2,3)),3)))
+
+# evaluate function values over the grid
 yGrid = xGrid[,1] - xGrid[,2] + xGrid[,3]^2
 
 # exact evaluation
