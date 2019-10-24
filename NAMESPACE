@@ -1,0 +1,5 @@
+exportPattern("mvInterpLinear",
+              "subsetNearestPoints",
+              "uniqueGridPoints")
+importFrom(Rcpp, evalCpp)
+useDynLib(mvInterp, .registration = TRUE)

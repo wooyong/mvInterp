@@ -1,0 +1,14 @@
+Package: mvInterp
+Type: Package
+Title: Linear interpolation of multivariate functions
+Version: 2019.10.23
+Author: Wooyong Lee
+Maintainer: Wooyong Lee <wooyong@uchicago.edu>
+Description: Linear interpolation of functions defined over arbitrary dimension. 
+    Utility functions useful for other interpolation methods are also provided.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 1.0.2)
+LinkingTo: Rcpp
+ByteCompile: true
