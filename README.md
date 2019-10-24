@@ -46,10 +46,13 @@ yGrid = xGrid[,1] - xGrid[,2] + xGrid[,3]^2
 
 # exact evaluation
 mvInterpLinear(c(  2, 2,   2), xGrid, yGrid)
+[1] 4
 
-# interpolation
+# linear interpolation
 mvInterpLinear(c(1.5, 2, 2.5), xGrid, yGrid)
+[1] 6
 
-# extrapolation
+# linear extrapolation
 mvInterpLinear(c(  4, 2,   4), xGrid, yGrid)
+[1] 16
 ```
