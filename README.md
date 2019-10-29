@@ -4,14 +4,12 @@
 
 This package performs linear interpolation of multivariate functions of arbitrary dimension by recursively applying bilinear interpolation.
 
-This package recursively applies bilinear interpolation to perform multivariate interpolation. A rectangular grid is required. Linear extrapolation is performed outside of the grid.
-
 ### Installation
 
 To install **mvInterp**, type
 
 ```r
-install.packages("https://wooyong.github.io/data/packages/mvInterp_2019.10.23.tar.gz", repos=NULL, type="source")
+install.packages("https://wooyong.github.io/data/packages/mvInterp_1.0.0.tar.gz", repos=NULL, type="source")
 ```
 
 Alternatively, to install **mvInterp** directly from source on Github, type
@@ -33,7 +31,9 @@ library(mvInterp)
 
 ### Usage
 
-The following example interpolates a function `f(x1, x2, x3) = x1 - x2 + x3^2`.
+The following example interpolates a function `f(x1, x2, x3) = x1 - x2 + x3^2` of three variables, by recursively applying bilinear interpolation.
+
+A rectangular grid is required for `mvInterp`. Linear extrapolation is performed outside of the grid.
 
 ```r
 require(mvInterp)
