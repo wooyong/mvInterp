@@ -1,7 +1,7 @@
 Package: mvInterp
 Type: Package
 Title: Linear interpolation of multivariate functions
-Version: 2019.10.23
+Version: 1.0.0
 Author: Wooyong Lee
 Maintainer: Wooyong Lee <wooyong@uchicago.edu>
 Description: Linear interpolation of functions defined over arbitrary dimension. 
